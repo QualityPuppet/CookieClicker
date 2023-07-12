@@ -1,7 +1,5 @@
 var gameValues = Object.values(Game.Objects);
 
-
-
 var minigame = Game.Objects.Bank.minigame;
 var goods = Object.values(minigame.goods).filter(good => {
     return gameValues[good.building.id].bought
@@ -32,7 +30,6 @@ var goodIsBuyable = function(good, log) {
             "Holding": holding
         });
     }
-
 
     var isAboveMarketCap = good.val > gameValues[5].bought;
 
